@@ -2,7 +2,7 @@ let data = {};
 const youtubeEngine = async (key, q) => {
   try {
     const response = await fetch(
-      `https://www.googleapis.com/youtube/v3/search?key=${key}&type=video&q=${q}&part=snippet`,
+      `https://www.googleapis.com/youtube/v3/search?key=${key}&type=video&q=${q}&maxResults=696&part=snippet`,
       {
         method: "GET",
       }
