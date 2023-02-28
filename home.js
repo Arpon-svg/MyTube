@@ -22,8 +22,8 @@ const printer = (data) => {
   let DOM = "";
   for (let i = 0; i < filteredData.length; i++) {
     DOM += `<div class="col-md-3 px-1 py-1">
-    <div class="card p-1" onclick="clickHandler('${filteredData[i].id.videoId}')">
-      <a href="./player.html" class="text-decoration-none">
+    <div class="card p-1" onclick="clickHandler('${filteredData[i].id.videoId}', '${filteredData[i].snippet.description}')">
+      <a href="./player.html#vidFrame" class="text-decoration-none">
         <img
           src="${filteredData[i].snippet.thumbnails.medium.url}"
           alt="..."
@@ -45,8 +45,9 @@ const printer = (data) => {
   }
   document.getElementById("trees").innerHTML = DOM;
 };
-const clickHandler = (vidID) => {
-  sessionStorage.removeItem("vidID");
+const clickHandler = (vidID,des) => {
+  sessionStorage.removeItem("vidID","des");
   sessionStorage.setItem("vidID", vidID);
+  sessionStorage.setItem("des", des);
 };
 youtubeEngine(key, 'JavaScript Tips and Tricks  &order=date');
