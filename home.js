@@ -23,7 +23,7 @@ const printer = (data) => {
   for (let i = 0; i < filteredData.length; i++) {
     DOM += `<div class="col-md-3 px-1 py-1">
     <div class="card p-1" onclick="clickHandler('${filteredData[i].id.videoId}', '${filteredData[i].snippet.description}')">
-      <a href="./player.html#vidFrame" class="text-decoration-none">
+      <a href="./player.html#vidFrame" target="_blank" class="text-decoration-none">
         <img
           src="${filteredData[i].snippet.thumbnails.medium.url}"
           alt="..."
