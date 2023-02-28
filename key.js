@@ -1,1 +1,3 @@
-var _0x7681=["\x41\x49\x7A\x61\x53\x79\x43","\x33\x73\x30\x56\x5A\x54\x51\x57\x72\x72","\x53\x48\x79\x61\x43\x38\x4D\x6E\x74","\x4F\x69\x37\x38\x62\x78\x43\x62\x46\x61\x77\x54\x6B","","\x6C\x65\x6E\x67\x74\x68"];let keyGen=[_0x7681[0],_0x7681[1],_0x7681[2],_0x7681[3]];let key=_0x7681[4];for(let i=0;i< keyGen[_0x7681[5]];i++){key+= keyGen[i]}
+// let key = "AIzaSyC3s0VZTQWrrSHyaC8MntOi78bxCbFawTk";
+// Backup Key
+let key = "AIzaSyBR8qtbgk3peVGKOANaTJDoj4lyvYJpZuc";
